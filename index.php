@@ -17,7 +17,16 @@
 </head>
 
 <body>
+    <h1>IMPIEGATI</h1>
+    <?php
+    foreach ($employees as $employee) {
 
+        echo $employee->getHtml()
+            . "<hr>";
+
+
+    }
+    ?>
 </body>
 
 </html>
