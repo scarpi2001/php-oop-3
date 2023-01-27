@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- stampa impiegati -->
     <h1>IMPIEGATI</h1>
     <?php
     foreach ($employees as $employee) {
@@ -24,8 +25,13 @@
         echo $employee->getHtml()
             . "<hr>";
 
-
     }
+    ?>
+
+    <!-- stampa boss -->
+    <h1>BOSS</h1>
+    <?php
+    echo $boss->getHtml();
     ?>
 </body>
 
